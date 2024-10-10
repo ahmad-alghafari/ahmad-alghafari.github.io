@@ -30,6 +30,7 @@
   <!-- ===============================================-->
   <!--    Stylesheets-->
   <!-- ===============================================-->
+
   <link href="./vendors/glightbox/glightbox.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -40,6 +41,8 @@
   <link href="./assets/css/theme.min.css" rel="stylesheet" id="style-default">
   <link href="./assets/css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
   <link href="./assets/css/user.min.css" rel="stylesheet" id="user-style-default">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+
   <script>
     var isRTL = JSON.parse(localStorage.getItem('isRTL'));
     if (isRTL) {
@@ -55,11 +58,10 @@
       userLinkRTL.setAttribute('disabled', true);
     }
   </script>
+
 </head>
 
-
 <body>
-
   <main class="main" id="top">
     <div class="container" data-layout="container">
       <script>
@@ -76,7 +78,7 @@
             <span class="font-sans-serif">Eng Ahmad</span>
           </div>
         </a>
-        <div class="collapse navbar-collapse scrollbar" id="navbarStandard">
+        <!-- <div class="collapse navbar-collapse scrollbar" id="navbarStandard">
           <ul class="navbar-nav" data-top-nav-dropdowns="data-top-nav-dropdowns">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -615,18 +617,17 @@
             </div>
           </li>
 
-        </ul>
+        </ul> -->
       </nav>
       <div class="content">
         <div class="row g-3">
-
           <div class="col-lg-4 col-xl-3">
             <div class="sticky-sidebar top-navbar-height">
               <div class="card">
                 <div class="card-body">
                   <div class="row g-3 align-items-center">
-                    <div class="col-md-6 col-lg-12 text-center"><img class="img-fluid rounded-3" src="./assets/img/personal/ahmad.JPG"
-                        alt="" /></div>
+                    <div class="col-md-6 col-lg-12 text-center"><img class="img-fluid rounded-3"
+                        src="./assets/img/personal/ahmad.JPG" alt="" /></div>
                     <div class="col-md-6 col-lg-12">
                       <div class="row row-cols-1 g-0">
                         <div class="col text-center">
@@ -643,8 +644,17 @@
 
                           <a class="btn btn-success btn-md w-100"
                             href="https://wa.me/966593591961?text=Hi%20Ahmad,%20Are%20you%20looking%20for%20a%20job?">
-                            <span class="fas fa-comment me-1">
+                            <span class="fs-1 bi-whatsapp me-1">
                             </span>WhatsApp Chating</a>
+                          <hr>
+
+                          <a class="btn btn-primary btn-md w-100" href="tel:+966593591961">
+                            <span class="fas fa-phone-alt me-1"></span> Call Me
+                          </a>
+                          <hr>
+                          <a class="btn btn-warning btn-md w-100" href="sms:+966593591961?body=Hello,%20I'm%20interested%20in%20your%20services">
+                            <span class="fas fa-sms me-1"></span> Send SMS
+                        </a>
                         </div>
                         <div class="col mt-4 mt-md-5 mt-lg-4">
                           <div class="row text-center">
@@ -672,7 +682,7 @@
           <div class="col-lg-4 col-xl-6">
             <div class="card mb-3">
               <div class="card-header bg-light">
-                <h5 class="mb-0" id="intro">Introduction</h5>
+                <h5 class="mb-0" id="summary">Summary</h5>
               </div>
               <div class="card-body">
                 <div class="row flex-between-center">
@@ -718,9 +728,13 @@
               </div>
               <img class="card-img-top" src="./assets/img/university/un1.jpg" alt="" />
               <div class="card-body">
-                <h3 class="fw-semi-bold">Temporary graduation notice from the Syrian Private University that I have graduated</h3>
-                <p>This letter from the Faculty of Computer Engineering at the Syrian Private University states that I have successfully graduated with the above mentioned degree, and a request has been submitted to the Ministry of Higher Education to grant me the engineering degree officially from the Ministry. This will take some time until February 2025 at the latest.</p>
-                
+                <h3 class="fw-semi-bold">Temporary graduation notice from the Syrian Private University that I have
+                  graduated</h3>
+                <p>This letter from the Faculty of Computer Engineering at the Syrian Private University states that I
+                  have successfully graduated with the above mentioned degree, and a request has been submitted to the
+                  Ministry of Higher Education to grant me the engineering degree officially from the Ministry. This
+                  will take some time until February 2025 at the latest.</p>
+
               </div>
             </div>
             <div class="card mb-3 mb-lg-0">
@@ -902,7 +916,8 @@
 
               </div>
             </div>
-            <div class="card mb-3" data-list='{"valueNames":["name","email","phone","address","joined"],"page":7,"pagination":true}'>
+            <div class="card mb-3"
+              data-list='{"valueNames":["name","email","phone","address","joined"],"page":7,"pagination":true}'>
               <div class="card-header">
                 <div class="row flex-between-center">
                   <div class="col-4 col-sm-auto d-flex align-items-center pe-0">
@@ -917,9 +932,9 @@
                     <thead class="bg-200 text-900">
                       <tr>
 
-                        <th class="sort pe-1 align-middle white-space-nowrap" >Name</th>
-                        <th class="sort pe-1 align-middle white-space-nowrap ps-5" 
-                          style="min-width: 200px;">Description</th>
+                        <th class="sort pe-1 align-middle white-space-nowrap">Name</th>
+                        <th class="sort pe-1 align-middle white-space-nowrap ps-5" style="min-width: 200px;">Description
+                        </th>
                       </tr>
                     </thead>
                     <tbody class="list" id="table-customers-body">
@@ -1394,8 +1409,8 @@
                       </button>
 
                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next" >
-                        <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
 
                       </button>
@@ -1414,8 +1429,9 @@
                 </div>
                 <div class="card-body">
                   <div class="terms-sidebar nav flex-column fs--1" id="terms-sidebar">
-                    <div class="nav-item"><a class="nav-link px-0 py-1" href="#intro">Introduction</a></div>
-                    <div class="nav-item"><a class="nav-link px-0 py-1" href="#graduation">Temporary Graduation Notice</a></div>
+                    <div class="nav-item"><a class="nav-link px-0 py-1" href="#summary">Summary</a></div>
+                    <div class="nav-item"><a class="nav-link px-0 py-1" href="#graduation">Temporary Graduation
+                        Notice</a></div>
                     <div class="nav-item"><a class="nav-link px-0 py-1" href="#highlights">Highlights</a></div>
                     <div class="nav-item"><a class="nav-link px-0 py-1" href="#certificates">Certificates</a></div>
                     <div class="nav-item"><a class="nav-link px-0 py-1" href="#skills">Skills</a></div>
